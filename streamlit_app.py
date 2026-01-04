@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Streamlit Web UI for Meeting Coach Agent
-Upload meetings, get analysis, and ask follow-up questions.
+Streamlit Web UI for Professional Growth Agent
+Upload meetings/interviews, get analysis, and ask follow-up questions.
 """
 
 import streamlit as st
@@ -22,8 +22,8 @@ session_manager = SessionManager()
 
 # Page config
 st.set_page_config(
-    page_title="Meeting Coach",
-    page_icon="🎯",
+    page_title="Professional Growth Coach",
+    page_icon="🚀",
     layout="wide"
 )
 
@@ -104,7 +104,7 @@ async def ask_followup(session_id: str, question: str):
 
 
 # UI Layout
-st.title("🎯 Meeting Coach Agent")
+st.title("🚀 Professional Growth Coach")
 st.markdown("AI-powered meeting and interview analysis with Claude Agent SDK")
 
 # Sidebar for configuration and previous sessions

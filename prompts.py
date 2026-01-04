@@ -1,5 +1,5 @@
 """
-Shared prompt configuration for Meeting Coach Agent.
+Shared prompt configuration for Professional Growth Agent.
 Ensures consistency across CLI and Streamlit interfaces.
 """
 
@@ -21,7 +21,7 @@ def get_agent_options(mode="analysis"):
     base_config = {
         "allowed_tools": ["Skill", "Read", "Write", "Bash"],
         "permission_mode": "acceptEdits",
-        # Custom system prompt with Meeting Coach instructions
+        # Custom system prompt with Professional Growth Coach instructions
         "system_prompt": _get_system_prompt(mode)
     }
     
@@ -29,10 +29,10 @@ def get_agent_options(mode="analysis"):
 
 
 def _get_system_prompt(mode):
-    """Get custom system prompt for Meeting Coach."""
+    """Get custom system prompt for Professional Growth Coach."""
     
-    # Complete Meeting Coach instructions in system prompt
-    base = """You are a Meeting Coach - an expert at analyzing meetings and providing constructive feedback.
+    # Complete Professional Growth Coach instructions in system prompt
+    base = """You are a Professional Growth Coach - an expert at analyzing professional conversations (meetings, interviews) and providing constructive feedback to help people advance their careers.
 
 ## Your Role
 

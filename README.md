@@ -1,4 +1,4 @@
-# Meeting Coach Agent
+# Professional Growth Agent
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
@@ -6,7 +6,7 @@
 [![Claude Agent SDK](https://img.shields.io/badge/Claude-Agent%20SDK-blueviolet.svg)](https://docs.anthropic.com/en/agent-sdk)
 [![AWS](https://img.shields.io/badge/AWS-Bedrock%20%26%20Transcribe-FF9900.svg)](https://aws.amazon.com/)
 
-AI-powered meeting analysis using Claude Agent SDK and AWS Transcribe. Get actionable feedback on your 1:1s and team meetings.
+AI-powered professional development through intelligent feedback. Analyze meetings, interviews, and conversations to accelerate your career growth using Claude Agent SDK and AWS Transcribe.
 
 ## Quick Start
 
@@ -17,7 +17,7 @@ cp env.template .env
 # Edit .env with your AWS credentials
 
 # Create S3 bucket
-aws s3 mb s3://meeting-coach-transcriptions --region us-west-2
+aws s3 mb s3://professional-growth-transcriptions --region us-west-2
 
 # Run
 uv run python agent.py your-meeting.mp3 --role report
@@ -37,7 +37,7 @@ Edit `.env`:
 ```bash
 AWS_REGION=us-west-2
 CLAUDE_CODE_USE_BEDROCK=1
-MEETING_TRANSCRIBE_S3_BUCKET=meeting-coach-transcriptions
+MEETING_TRANSCRIBE_S3_BUCKET=professional-growth-transcriptions
 ```
 
 ## Usage
@@ -118,7 +118,7 @@ Typical 30-minute meeting: ~$1.50
 
 **Consistent Prompt Management:**
 - `prompts.py` - Centralized configuration with custom system prompt
-- Custom system prompt with Meeting Coach instructions
+- Custom system prompt with Professional Growth Coach instructions
 - Mode-specific additions for analysis/chat/stream
 - All three interfaces use identical configuration
 

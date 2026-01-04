@@ -1,5 +1,5 @@
 """
-Session Manager for Meeting Coach Agent
+Session Manager for Professional Growth Agent
 Tracks and manages analysis sessions for easy resumption.
 """
 

@@ -2,7 +2,7 @@
 
 ## Overview
 
-Meeting Coach Agent uses a centralized prompt management approach inspired by Claude Agent SDK best practices for maintaining consistency across multiple interfaces.
+Professional Growth Agent uses a centralized prompt management approach inspired by Claude Agent SDK best practices for maintaining consistency across multiple interfaces.
 
 ## Design Pattern
 
@@ -26,10 +26,10 @@ Meeting Coach Agent uses a centralized prompt management approach inspired by Cl
 
 ### 1. prompts.py (Centralized Configuration)
 
-**Purpose**: Single source of truth for all Meeting Coach configuration
+**Purpose**: Single source of truth for all Professional Growth Coach configuration
 
 **Contains**:
-- Custom system prompt with Meeting Coach instructions
+- Custom system prompt with Professional Growth Coach instructions
 - Mode-specific prompt additions
 - Initial prompt builder
 
@@ -51,7 +51,7 @@ get_initial_prompt(audio_path, user_role, analysis_type, output_file, mode)
 
 **System Prompt Strategy**:
 - Uses **custom system prompt** (Method 4 from SDK docs)
-- Complete Meeting Coach instructions in the prompt
+- Complete Professional Growth Coach instructions in the prompt
 - Mode-specific additions appended
 - No CLAUDE.md or output styles needed
 

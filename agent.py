@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
-Meeting Coach Agent
-Analyzes meeting recordings and provides constructive feedback.
+Professional Growth Agent
+Analyzes meetings and interviews to provide constructive feedback for professional development.
 
 This agent uses Claude via Amazon Bedrock to:
-1. Transcribe meeting audio using AWS Transcribe
+1. Transcribe audio using AWS Transcribe
 2. Analyze conversation patterns
 3. Provide actionable feedback and insights
 """
@@ -63,7 +63,7 @@ async def run_meeting_analysis(
         output_file = f"{audio_name}_analysis.md"
     
     if verbose:
-        print(f"🎯 Starting Meeting Coach Agent")
+        print(f"🚀 Starting Professional Growth Agent")
         print(f"📁 Audio file: {audio_path}")
         print(f"📊 Analysis type: {analysis_type}")
         print(f"👤 Your role: {user_role}")
@@ -131,7 +131,7 @@ def main():
         sys.exit(1)
     
     parser = argparse.ArgumentParser(
-        description="Meeting Coach Agent - Analyze meeting recordings with AI",
+        description="Professional Growth Agent - Analyze meetings and interviews with AI",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:

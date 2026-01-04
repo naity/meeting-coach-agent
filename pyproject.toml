@@ -1,5 +1,5 @@
 [project]
-name = "meeting-coach-agent"
+name = "professional-growth-agent"
 version = "0.1.0"
 description = "AI-powered meeting analysis agent using Claude Agent SDK and AWS Transcribe"
 readme = "README.md"
